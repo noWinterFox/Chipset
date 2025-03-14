@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="Keywords"
+    content="wojewódzki konkurs informatyczny, chipset, Techniczne Zakłady Naukowe im. Gen Władysława Sikorskiego w Częstochowie, TZN, częstochowa, informatyka, szkoła, podstawowa />
+  <meta name="description"
+    content=" Strona Wojewódzkiego Konkursu Informatycznego Chipset w Technicznych Zakładach Naukowych im. Gen Władysława Sikorskiego w Częstochowie" />
+  <meta name="Author" content="Marcin Kowalczyk" />
+  <meta name="Robots" content="ALL" />
+  <meta name="language" content="pl" />
+  <script type="text/javascript" src="target.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Formularz Rejestracyjny</title>
+</head>
+<body>
+  <!--Idk what's this, so I left it there-->
+  <div id="fb_root"></div>
+  <header>
+    <img src="Images/baner.png" alt="Chipset - konkurs informatyczny">
+  </header>
+  <main>
+    <section class="content">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHx3a0PKrGk2EJ7ybZaGJNT_gv5JCodHCKg32_rzbgBZVaGA/viewform?embedded=true">Ładuję…</iframe>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &#169; by Techniczne Zakłady Naukowe 2011-2025 All Rights Reserved. Version 15.0</p>
+  </footer>
+  <script>
+    // This function makes the "Zarejestruj się" button flash
+    function flash(id, kolor, czas, kolor2, czas2) {
+      document.getElementById(id).style.color = kolor;
+      setTimeout('flash("' + id + '","' + kolor2 + '",' + czas2 + ',"' + kolor + '",' + czas + ')', czas);
+    };
+    // This function initalizes facebook features on the website so for now I'm not touching this
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+</body>
+</html>

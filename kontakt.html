@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta
+      name="Keywords"
+      content="wojewódzki konkurs informatyczny, chipset, Techniczne Zakłady Naukowe im. Gen Władysława Sikorskiego w Częstochowie, TZN, częstochowa, informatyka, szkoła, podstawowa"
+    />
+    <meta
+      name="description"
+      content=" Strona Wojewódzkiego Konkursu Informatycznego Chipset w Technicznych Zakładach Naukowych im. Gen Władysława Sikorskiego w Częstochowie"
+    />
+    <meta name="Author" content="Marcin Kowalczyk" />
+    <meta name="Robots" content="ALL" />
+    <meta name="language" content="pl" />
+    <script type="text/javascript" src="target.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Kontakt</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="baner.png" alt="Chipset - konkurs informatyczny" />
+    </header>
+    <main>
+      <section class="content">
+        <article class="contact">
+          <h3>Kontakt</h3>
+          <span class="contact-info">
+            <img src="admin.png" alt="administrator" />
+            <p>
+              Marcin Kowalczyk<br />
+              Tel. 502 764 294<br />
+              E-mail: konkurs@tzn.edu.pl
+            </p>
+          </span>
+          <span class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.8926827209357!2d19.107612000000007!3d50.814626999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b5d7b8be85ab%3A0xb29005fe705ad0c7!2sTechniczne+Zak%C5%82ady+Naukowe+im.+gen.+W.+Sikorskiego!5e0!3m2!1spl!2spl!4v1424254239639"
+            ></iframe>
+          </span>
+        </article>
+        <aside class="side-panel">
+          <img src="malpa.png" alt="symbol małpy (@)" /><br />
+          <span class="callendar">
+            <!--To be replaced with js generated callendar -->
+            <h3>Marzec 2025</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Pn</th>
+                  <th>Wt</th>
+                  <th>Śr</th>
+                  <th>Cz</th>
+                  <th>Pt</th>
+                  <th>So</th>
+                  <th>Nd</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+              </tbody>
+            </table><br />
+          </span>
+          <span class="nav-bar"> 
+            <h3>Kategorie Konkursu</h3>
+            <ul id="mainNav" class="main-nav">
+              <li><a href="/konkurs/index.php">O konkursie</a></li>
+              <li><a href="/konkurs/regulamin.php">Regulamin konkursu</a></li>
+              <li><a href="/konkurs/merytoryka.php">Zakres merytoryczny</a></li>
+              <li><a href="/konkurs/formularz.php" id="register-button"><strong>Zarejestruj się!</strong></a></li>
+              <li><a href="/konkurs/instrukcja.php">Instrukcja Moodle</a></li>
+              <li><a href="http://www.moodle.czest.pl/login/index.php" onclick="return !aTarget(this)">Platforma moodle</a></li>
+              <!--onclick initializes something in "target.js" - to be deleted when "target.js" changes-->
+            </ul>
+          </span>
+        </aside>
+      </section>
+      <footer>
+        <p>Copyright &#169; by Techniczne Zakłady Naukowe 2011-2025 All Rights Reserved. Version 15.0</p>
+      </footer>
+    </main>
+    <script>
+      // "Zarejestruj się" button flashing 
+      // <![CDATA[
+      function flash(id, kolor, czas, kolor2, czas2) {
+        document.getElementById(id).style.color = kolor;
+        setTimeout('flash("' + id + '","' + kolor2 + '",' + czas2 + ',"' + kolor + '",' + czas + ")", czas);
+      }
+      flash("register-button", "red", 500, "#6b7a99", 500);
+      // ]]>
+    </script>
+  </body>
+</html>
