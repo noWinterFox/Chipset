@@ -20,7 +20,7 @@
 
 1. Konwencje nazywania
   - Wszystkie id, class, zmienne, funkcje, itd są pisane po angielsku w wyrazisty sposób
-  - id i class są pisane w formie kebab-case, funkcje, zmienne pisane w camelCase, a funkcje i foldery w PascalCase
+  - id i class są pisane w formie kebab-case, zmienne pisane w camelCase, a funkcje i foldery w PascalCase
     ```
     <section class="left-panel" id="slide-panel"></section>
 
