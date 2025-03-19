@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    grid-template-columns: 1fr; /* Single column layout by default */
+    min-height: 100vh;
+}
+
+header {
+    grid-row: 1;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Left section takes 2 parts, right 1 */
+    gap: 20px;
+    padding: 20px;
+}
+
+.left {
+    grid-column: 1;
+    background-color: white;
+    padding: 20px;
+}
+
+.right {
+    grid-column: 2;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+footer {
+    grid-row: 3;
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Stacks the sections */
+    }
+
+    .right {
+        grid-column: 1;
+    }
+}
+
+img:not(.banner img){
+    width: 230px;
+    height: auto;
+}
+
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-auto-rows: auto;  /* Automatically adjusts row heights */
+    gap: 10px; /* Adds spacing between items */
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Removes default bullets */
+}
+
+.sponsors img {
+    width: 100%;  /* Ensures images fit their grid cell */
+    height: auto;
+    max-width: 230px; /* Prevents images from getting too large */
+    object-fit: contain; /* Ensures logos aren't distorted */
+}
